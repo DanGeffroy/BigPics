@@ -1,3 +1,18 @@
-<h1>
-  {{title}}
-</h1>
+<!--<div [ngStyle]="{'background-image': 'url(' + photo + ')'}">-->
+<div class="top-section" [ngStyle]="{'background-image': 'url(https://source.unsplash.com/category/'+input+'/1600x900)'}">
+  <div class="container">
+    <div class="row inputs">
+      <div class="card-panel col l4 m8 s12">
+        <input [(ngModel)]="input" type="text"  name="name">
+      </div>
+    </div>
+    <h1 class="white-text">{{input}}</h1>
+  </div>
+</div>
+
+<div class="gallery">
+  <div class="container">
+    <h2>Gallery</h2>
+  </div>
+</div>
+<div class="footer"></div>
