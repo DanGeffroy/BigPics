@@ -3,10 +3,17 @@
  **********************************************************************************************/
 /** Map relative paths to URLs. */
 const map: any = {
+    "jquery": "vendor/jquery",
+    "materialize": "vendor/materialize-css"
 };
 
 /** User packages configuration. */
 const packages: any = {
+    'materialize': {
+      "format": "global",
+      "main": "dist/js/materialize",
+      "defaultExtension": "js"
+    }
 };
 
 ////////////////////////////////////////////////////////////////////////////////////////////////
@@ -29,6 +36,7 @@ const barrels: string[] = [
   // App specific barrels.
   'app',
   'app/shared',
+  'app/side-slide',
   /** @cli-barrel */
 ];
 
