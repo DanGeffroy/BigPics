@@ -14,9 +14,4 @@ describe('App: BigPics', () => {
       inject([BigPicsAppComponent], (app: BigPicsAppComponent) => {
     expect(app).toBeTruthy();
   }));
-
-  it('should have as title \'big-pics works!\'',
-      inject([BigPicsAppComponent], (app: BigPicsAppComponent) => {
-    expect(app.title).toEqual('big-pics works!');
-  }));
 });

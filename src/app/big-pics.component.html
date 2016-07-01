@@ -1,18 +1,35 @@
 <!--<div [ngStyle]="{'background-image': 'url(' + photo + ')'}">-->
-<div class="top-section" [ngStyle]="{'background-image': 'url(https://source.unsplash.com/category/'+input+'/1600x900)'}">
-  <div class="container">
-    <div class="row inputs">
-      <div class="card-panel col l4 m8 s12">
-        <input [(ngModel)]="input" type="text"  name="name">
+
+  <div class="top-section valign-wrapper" [ngStyle]="{'background-image': 'url(https://source.unsplash.com/1600x900?'+input+')'}">
+    <div class="container valign background-reset">
+      <div class="row">
+        <div class="col s12 m4 offset-m4">
+          <div class="box">
+                <input class="white-text" type="search" id="search" [(ngModel)]="input" type="text"  name="name">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 m4 offset-m4">
+          <a class="ghost-button" href="#">See the gallery</a>
+        </div>
       </div>
     </div>
-    <h1 class="white-text">{{input}}</h1>
   </div>
-</div>
 
 <div class="gallery">
   <div class="container">
     <h2>Gallery</h2>
+    <div class="row">
+       <div class="col s12 m4" *ngFor="let pic of pics">
+         <div class="card hoverable">
+           <div class="card-image">
+             <img src="https://source.unsplash.com/1600x90{{pic}}?{{input}}">
+             <span class="card-title">{{input}}</span>
+           </div>
+         </div>
+       </div>
+     </div>
   </div>
 </div>
 <div class="footer"></div>
