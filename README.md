@@ -11,13 +11,27 @@ Probably an explorer/Big pics viewer
 - css framework : don't know yet
 
 The project will be hosted on github pages.
+## Setup: 
+Install angular cli
+```bash
+npm install -g angular-cli
+```
+Install the dependencies : 
+```bash
+npm install
+```
+Serve the app : 
+```bash
+ng serve
+```
+The app is now available on http://localhost:4200/
 
 ## Todo
-- Init project
-- Update the readme with a setup part
-- Find css framework
-- Make a random pics gridview
-- Make a big pics modal
-- Make a search engine
+- Init project : done
+- Update the readme with a setup part : done
+- Find css framework : done
+- Make a random pics gridview : done
+- Make a big pics modal 
+- Make a search engine : done
  
 Made with :heart: by Dan
