@@ -1,4 +1,4 @@
-# BigPics
+# BigPics (WIP) : [link](http://dangeffroy.github.io/BigPics/)
 
 <p align="center">
 <img style="width:100%" src="prev.png">
