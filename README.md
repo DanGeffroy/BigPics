@@ -1,4 +1,9 @@
 # BigPics
+
+<p align="center">
+<img style="width:100%" src="prev.png">
+</p>
+
 A simple front-end app that use unsplash API
 <br/>
 Probably an explorer/Big pics viewer
@@ -11,16 +16,16 @@ Probably an explorer/Big pics viewer
 - css framework : don't know yet
 
 The project will be hosted on github pages.
-## Setup: 
+## Setup:
 Install angular cli
 ```bash
 npm install -g angular-cli
 ```
-Install the dependencies : 
+Install the dependencies :
 ```bash
 npm install
 ```
-Serve the app : 
+Serve the app :
 ```bash
 ng serve
 ```
@@ -31,8 +36,8 @@ The app is now available on http://localhost:4200/
 - Update the readme with a setup part : done
 - Find css framework : done
 - Make a random pics gridview : done
-- Make a big pics modal 
+- Make a big pics modal
 - Make a search engine : done
-- add smooth scroll 
- 
+- add smooth scroll
+
 Made with :heart: by Dan
