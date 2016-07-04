@@ -33,5 +33,6 @@ The app is now available on http://localhost:4200/
 - Make a random pics gridview : done
 - Make a big pics modal 
 - Make a search engine : done
+- add smooth scroll 
  
 Made with :heart: by Dan
