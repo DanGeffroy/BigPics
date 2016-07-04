@@ -1,17 +1,19 @@
 <!--<div [ngStyle]="{'background-image': 'url(' + photo + ')'}">-->
 <div class="allApp">
-  <div class="top-section valign-wrapper" [ngStyle]="{'background-image': 'url(https://source.unsplash.com/1600x900?'+input+')'}">
-    <div class="container valign background-reset">
-      <div class="row">
-        <div class="col s12 m4 offset-m4">
-          <div class="box">
-                <input class="white-text" type="search" id="search" [(ngModel)]="input" type="text"  name="name">
+  <div class="top-section" [ngStyle]="{'background-image': 'url(https://source.unsplash.com/1600x900?'+input+')'}">
+    <div class="background-reset valign-wrapper">
+      <div class="container valign">
+        <div class="row">
+          <div class="col s12 m4 offset-m4">
+            <div class="box">
+                  <input class="white-text" type="search" id="search" [(ngModel)]="input" type="text"  name="name">
+            </div>
           </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col s12 m4 offset-m4">
-          <a class="ghost-button" href="#gallery" (click)="scrollToGallery($event)">See the gallery</a>
+        <div class="row">
+          <div class="col s12 m4 offset-m4">
+            <a class="ghost-button" href="#gallery" (click)="scrollToGallery($event)">See the gallery</a>
+          </div>
         </div>
       </div>
     </div>
@@ -21,7 +23,7 @@
   <div class="container">
     <h2 id="gallery">Gallery</h2>
     <div class="row">
-       <div class="col s12 m4" *ngFor="let pic of pics">
+       <div class="col s12 m6 l4" *ngFor="let pic of pics">
          <div class="card hoverable">
            <div class="card-image">
              <img src="https://source.unsplash.com/1600x9{{pic}}?{{input}}">
@@ -32,6 +34,12 @@
      </div>
   </div>
   </div>
-  <div class="footer"></div>
-
+  <footer class="page-footer">
+            <div class="footer-copyright">
+              <div class="container">
+              Made with love by Dan
+              <a class="grey-text text-lighten-4 right" href="https://github.com/DanGeffroy">My GITHUB</a>
+              </div>
+            </div>
+          </footer>
 </div>
